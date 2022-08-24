@@ -1,0 +1,47 @@
+.userPassword{
+    margin-top: 10px;
+    width: 90%;
+    font-size: 18px;
+    margin-left: 4.5%;
+    height: 38px;
+    background-color: rgb(234, 234, 234);
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.userPassword:focus{
+    outline: 0;
+}
+.mother .userSubmit{
+    width: 90%;
+    background-color: #2983f8;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    transition: 0.2s all;
+    border-radius: 4px;
+    margin-left: 4.5%;
+    margin-top: 65px;
+}
+.mother .userSubmit:hover{
+    box-shadow: 2px 2px black;
+    background-color: rgb(16 82 172);
+}
+.question h1{
+    text-align: center;
+    color: #dfd5d5;
+}
+.question input{
+    padding: 5px;
+    box-shadow: inset 2px 2px 3px black;
+    width: 60px;
+    height: 27px;
+    margin-left: 41%;
+    font-size: 20px;
+    border: none;
+}
+.question input:focus{
+    outline: 0;
+}

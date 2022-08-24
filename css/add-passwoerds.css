@@ -1,0 +1,119 @@
+.mother .imgUpload{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 3px dashed black;
+}
+.mother .imgUpload img{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.mother #img{
+    display: contents;
+}
+.mother .imgUpload i{
+    font-size: 43px;
+    margin-left: 26px;
+    margin-top: 30px;
+}
+.mother .inputText{
+    color: black;
+    width: 98%;
+    margin-left: auto;
+    background: #e3e3e3;
+    margin-right: auto;
+    height: 29px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 17px;
+    text-shadow: 1px 1px white;
+}
+.mother .inputText:focus{
+    outline: 0;
+}
+.mother .submitButton{
+    width: 100%;
+    background-color: #2983f8;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    transition: 0.2s all;
+    border-radius: 4px;
+    margin-top: 65px;
+}
+.mother .submitButton:hover{
+    box-shadow: 2px 2px black;
+    background-color: rgb(16 82 172);
+}
+.mother .exit{
+    font-size: 25px;
+    cursor: pointer;
+}
+.mother .exit:hover{
+    color: rgb(163, 0, 0);
+}
+.mother small{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 0 0 5px 5px;
+}
+.mother button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 3px;
+    float: right;
+    font-size: 17px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s all;
+    border-radius: 0 0 5px 5px;
+}
+.load1{
+    display: none;
+    width: 60%;
+    height: 20px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 40%;
+    overflow: hidden;
+    margin-top: 12px;
+    background-color: rgb(6, 52, 112);
+}
+#imgUploadButton{
+    margin-left: 40%;
+    margin-top: 16px;
+    background-color: rgb(31, 116, 226);
+    color: white;
+    height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    width: 108px;
+    font-size: 14px;
+}
+#imgUploadButton:hover{
+    background-color: rgb(6, 52, 112);
+}
+.load1 .load2{
+    width: 0%;
+    height: 20px;
+    font-size: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(31, 116, 226);
+    color: white;
+    text-align: center;
+}
+.mother button:hover{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

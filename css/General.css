@@ -1,0 +1,321 @@
+@font-face {font-family: 'fontello';src: url('./font/fontello.eot?62346241');src: url('./font/fontello.eot?62346241#iefix') format('embedded-opentype'),             url('./font/fontello.woff?62346241') format('woff'),             url('./font/fontello.ttf?62346241') format('truetype'),             url('./font/fontello.svg?62346241#fontello') format('svg');        font-weight: normal;        font-style: normal;      }      .demo-icon {        font-family: "fontello";        font-style: normal;        font-weight: normal;        speak: never;        display: inline-block;        text-decoration: inherit;        width: 1em;        margin-right: .2em;        text-align: center;        font-variant: normal;        text-transform: none;        line-height: 1em;        margin-left: .2em;        -webkit-font-smoothing: antialiased;        -moz-osx-font-smoothing: grayscale;      }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.photoGalery{
+    width: 100%;
+    display: none;
+    max-width: 350px;
+    background-color: #f0f0f0;
+    margin-left: 1.8%;
+    top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+}
+.photoGalery .imgUpload{
+    width: 100%;
+    padding-top: 25px;
+    height: 100px;
+    border-bottom: 1px solid grey;
+    background-color: #f0f0f0;
+}
+.photoGalery .imgUpload .img{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-left: 25px;
+    float: left;
+    background-color: white;
+    border: 3px dashed black;
+}
+.photoGalery .imgUpload .img i{
+    font-size: 33px;
+    margin: 0;
+    margin-left: 17px;
+    margin-top: 20px;
+}
+.photoGalery .imgUpload .imgPreview{
+    display: none;
+    width: 70px;
+    height: 70px;
+}
+.photoGalery .imgUpload .imgx{
+    display: contents;
+}
+.photoGalery .imgUpload h3{
+    float: left;
+    display: none;
+    margin-left: 7%;
+    margin-top: 0px;
+}
+.photoGalery .imgUpload .load1{
+    width: 60%;
+    height: 20px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 36%;
+    overflow: hidden;
+    display: none;
+    margin-top: -20px;
+    background-color: rgb(6, 52, 112);
+}
+.photoGalery .imgUpload .uploadİmg{
+    margin-top: 50px;
+    margin-left: 36%;
+    display: none;
+}
+#photoGaleryExit{
+    margin-left: 90%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 22px;
+}
+#photoGaleryExit:hover{
+    color: rgb(163, 0, 0);
+}
+.photoGalery .imgUpload .uploadİmg input{
+    background-color: #2983f8;
+    height: 26px;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 6px;
+    width: 119px;
+}
+.photoGalery .imgUpload .uploadİmg input:hover{
+    background-color: #1f74e2;
+    box-shadow: 2px 2px black;
+}
+.photoGalery .imgUpload .load1 .load2{
+    width: 10%;
+    height: 20px;
+    font-size: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(31, 116, 226);
+    color: white;
+    text-align: center;
+}
+.photoGalery .galery{
+    height: 273px;
+    overflow: auto;
+}
+.photoGalery .galery li{
+    margin-top: 12px;
+    list-style: none;
+    float: left;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.photoGalery .galery li img{
+    width: 70px;
+    height: 70px;
+}
+.photoGalery .galery li img:hover{
+    filter: grayscale(100%);
+}
+
+
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.icon-up-open{
+    display: none;
+}
+.mother{
+    max-width: 400px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app i{    
+    float: right;
+    margin-right: 15px;
+    margin-top: 26px;
+}
+.mother .app .head div, h2 ,i{
+    float: left;
+}
+.app{
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    height: 66px;
+    clear: both;
+}
+.head{
+    width: 100%;
+    height: 66px;
+}
+.app .logo img{
+    width: 49px;
+    margin-left: 15px;
+    margin-top: 8px;
+    height: 49px;
+}
+.app h2{
+    margin-left: 20%;
+}
+.fakePasswordButton{
+    clear: both;
+    width: 100%;
+    height: 70px;
+    max-width: 400px;
+}
+.addPassword{
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 20px;
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+}
+.addPassword button{
+    width: 100%;
+    background-color: #2983f8;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    transition: 0.2s all;
+    border-radius: 4px;
+}
+.addPassword button:hover{
+    box-shadow: 2px 2px black;
+    background-color: rgb(16 82 172);
+}
+.moreDetail{
+    width: 91%;
+    margin-left: 15px;
+}
+.moreDetail input{
+    clear: both;
+    width: 100%;
+    margin-top: 40px;
+    height: 30px;
+    border: none;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid black;
+    margin-right: auto;
+    font-size: 30px;
+    margin-left: auto;
+}
+.moreDetail input:focus{
+    outline: 0;
+}
+.moreDetail button{
+    color: white;
+    margin-left: 7%;
+    height: 40px;
+    border-radius: 4px;
+    width: 53px;
+    border: none;
+    margin-top: 17px;
+    font-size: 25px;
+    background-color: #4f4f4f;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.moreDetail button:hover{
+    box-shadow: 2px 2px black;
+    background-color: #717171;
+}
+.moreDetail button i{
+    margin: 0;
+    margin-right: 7px;
+    margin-top: 3px;
+}
+#alert{
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    height: 0;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin-top: -10px;
+    border-radius: 0 0 3px 3px;
+}
+#alert h3{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 7px;
+}
+
+
+.app.edit head i{    
+    float: right;
+    margin-right: 15px;
+    margin-top: 26px;
+}
+.mother .app.edit .head div, h2 ,i{
+    float: left;
+}
+.app.edit{
+    display: none;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    height: 237px;
+    background-color: white;
+    clear: both;
+}
+.app.edit .head{
+    cursor: default;
+    width: 100%;
+    height: 66px;
+}
+.app.edit .logo img{
+    width: 49px;
+    margin-left: 15px;
+    margin-top: 8px;
+    filter: grayscale(100%);
+    height: 49px;
+    transition: 1s all;
+}
+.app.edit .logo img:hover{
+    filter: grayscale(0%);
+    filter: sepia(100%);
+}
+.app.edit .h2{
+    font-size: 27px;
+    color: #515151;
+    width: 47%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.app.edit .h2:focus{
+    outline: none;
+}
+.app.edit .icon-up-open{
+    display: block;
+}
+.app.edit .moreDetail input{
+    margin-top: 11px;
+}
+.app.edit .moreDetail button {
+    width: 87px;
+}
+.app.edit .moreDetail button i {
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 3px;
+}
+.smallNameLengh{
+    background: black;
+    color: white;
+    padding: 2px;
+    border-radius: 0 0 2px 2px;
+    position: absolute;
+    font-size: 11px;
+    margin-top: 55px;
+    margin-left: -192px;
+}
